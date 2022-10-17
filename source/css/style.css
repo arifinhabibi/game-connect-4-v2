@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.container {
+    /* background-color: rgb(139, 162, 255); */
+    background-color: rgb(139, 162, 255);
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+
+
+
+/* intro */
+.display-intro {
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(139, 162, 255);
+    position: absolute;
+}
+
+.title {
+    color: #fff;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    text-transform: uppercase;
+}
+
+.display-intro input[type=text] {
+    position: absolute;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: none;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+}
+.play  {
+    height: 50px;
+    cursor: pointer;
+    width: 150px;
+    position: absolute;
+    bottom: 30%;
+    background-color: rgb(0, 0, 144);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 4px 4px 10px #fff;
+}
+.play:hover{
+    background-color: rgb(67, 67, 255);
+}
+
+/* countdown */
+.display-countdown{
+    width: 1000px;
+    position: absolute;
+    height: 600px;
+    background-color: rgb(139, 162, 255);
+}
+.header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 40px;
+}
+.number {
+    color: #fff;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+/* game */
+.display-game {
+    position: absolute;
+}
+
+/* display */
+.screen {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.screen.active {
+    opacity: 1;
+}
