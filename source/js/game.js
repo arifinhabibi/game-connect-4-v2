@@ -42,8 +42,8 @@ class Game {
                         this.botChoose()
                         setTimeout(() => {
                             this.check();
+                            this.canClick = true;
                         }, 200)
-                        this.canClick = true;
                     }, 1000);
                 }
             })

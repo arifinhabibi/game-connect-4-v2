@@ -236,6 +236,18 @@ body {
 }
 
 
+/* back */
+.back {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.fa-circle-left {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
 
 /* description information users */
 

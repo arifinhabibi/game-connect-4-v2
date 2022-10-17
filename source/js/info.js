@@ -8,5 +8,4 @@ info.addEventListener('click', () => {
 
 cancel.addEventListener('click', () => {
     information.style.display = 'none'
-    connect4.setActiveScreen('countdown')
 })
