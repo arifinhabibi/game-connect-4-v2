@@ -8,4 +8,7 @@ class Countdown {
     unMount(){
         this.display.classList.remove('active')
     }
+    render(){
+        
+    }
 }

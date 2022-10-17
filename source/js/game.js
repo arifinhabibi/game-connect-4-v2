@@ -8,4 +8,7 @@ class Game {
     unMount(){
         this.display.classList.remove('active')
     }
+    render(){
+        
+    }
 }

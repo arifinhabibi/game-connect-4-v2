@@ -1,9 +1,11 @@
 const intro = new Intro()
+intro.render()
 
 const countdown = new Countdown()
+countdown.render()
 
 const game = new Game()
-
+game.render()
 
 class Connect4 {
     constructor(){
@@ -16,11 +18,15 @@ class Connect4 {
     }
 
     render(){
-        this.setActiveScreen()
+        this.setActiveScreen('intro')
     }
 
     setActiveScreen(screen){
-
+        if (this.activeScreen) {
+            this.screenscreen[this.activeScreen].unMount()
+        }
+        this.screens[screen]?.mount()
+        this.activeScreen = screen
     }
 }
 
