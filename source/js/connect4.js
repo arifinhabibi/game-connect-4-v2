@@ -18,7 +18,7 @@ class Connect4 {
     }
 
     render(){
-        this.setActiveScreen('game')
+        this.setActiveScreen('intro')
         console.log(this.screens)
     }
 
