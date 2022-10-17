@@ -93,17 +93,117 @@ body {
     justify-content: center;
 }
 
-/* game */
+/* game display */
 .display-game {
     position: absolute;
+    width: 1000px;
+    height: 600px;
 }
+
+
+
+/* information */
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    width: 30px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.information {
+    display: none;
+    z-index: 99;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 300px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+.cancel {
+    font-size: 30px;
+    text-align: end;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* game */
+
+.game {
+    background-image: url('../image/connectbg.png');
+    background-repeat: none;
+    background-size: cover;
+    background-color: #fff;
+    height: 560px;
+    width: 560px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 4%;
+}
+.animation {
+    height: 80px;
+    width: 560px;
+    background-color: #000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+.cell {
+    height: 80px;
+    width: 80px;
+}
+
+.user {
+    background-color: rgb(55, 255, 0);
+    height: 56px;
+    width: 56px;
+    margin: 12px;
+    border-radius: 100%;
+}
+
+.bot {
+    background-color: yellow;
+    height: 56px;
+    width: 56px;
+    margin: 12px;
+    border-radius: 100%;
+}
+
+
 
 /* display */
 .screen {
     opacity: 0;
     transition: 0.5s;
+    pointer-events: none;
 }
 
 .screen.active {
     opacity: 1;
+    pointer-events: unset;
 }
